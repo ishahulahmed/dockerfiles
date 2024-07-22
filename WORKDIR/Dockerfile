@@ -1,5 +1,6 @@
 FROM almalinux:9
 RUN mkdir /app
-RUN cd /app
+# set up the pwd
+WORKDIR /app 
 RUN pwd
 CMD ["sleep", "100"]
